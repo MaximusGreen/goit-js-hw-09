@@ -10,6 +10,6 @@ import"./assets/modulepreload-polyfill-3cfb730f.js";/* empty css                
       </a>
     </li>
   `);e.innerHTML=n.join("");const c=document.querySelector(".gallery");c.addEventListener("click",t=>{if(t.preventDefault(),t.target.tagName!=="IMG")return;const a=t.target.dataset.source,o=t.target.alt;basicLightbox.create(`
-    <img class="gallery-image" src="${a}" alt="${o}" width="800" height="600">
+    <img src="${a}" alt="${o}" width="800" height="600">
   `).show()});new i(".gallery a",{captionDelay:250,captionsData:"alt"});
 //# sourceMappingURL=commonHelpers.js.map
