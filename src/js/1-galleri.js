@@ -100,7 +100,7 @@ gallery.addEventListener('click', e => {
   const description = e.target.alt;
 
   const instance = basicLightbox.create(`
-    <img class="gallery-image" src="${largeImageSrc}" alt="${description}" width="800" height="600">
+    <img src="${largeImageSrc}" alt="${description}" width="800" height="600">
   `);
 
   instance.show();
