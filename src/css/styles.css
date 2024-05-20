@@ -72,7 +72,7 @@ body {
   align-items: center;
   padding: 24px 0px;
   display: grid;
-  grid-template-columns: repeat(3, 360px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
