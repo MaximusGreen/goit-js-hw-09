@@ -89,21 +89,4 @@ const galleryItems = images.map(image => {
 
 galleryContainer.innerHTML = galleryItems.join('');
 
-const gallery = document.querySelector('.gallery');
-
-gallery.addEventListener('click', e => {
-  e.preventDefault();
-  
-  if (e.target.tagName !== 'IMG') return; 
-
-  const largeImageSrc = e.target.dataset.source;
-  const description = e.target.alt;
-
-  const instance = basicLightbox.create(`
-    <img src="${largeImageSrc}" alt="${description}" width="800" height="600">
-  `);
-
-  instance.show();
-});
-    
 const lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250, captionsData: "alt" });
